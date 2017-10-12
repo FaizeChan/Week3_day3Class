@@ -29,7 +29,7 @@ namespace Week3_day3Class
 
         public override string GetDistanceTraveled()
         {
-            return " Altitude: " + altitude + "-" + GetDistanceTraveled();
+            return " Altitude: " + altitude + " " + "-" + " " + base.GetDistanceTraveled();
         }
     }
 }
