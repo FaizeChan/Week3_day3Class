@@ -17,16 +17,20 @@ namespace Week3_day3Class
             //baseVehical.Move();
             //Console.WriteLine(baseVehical.DistanceTraveled);
 
-            Automobile herbie = new Automobile(4, 13, 2, 4, 1500, "while", 88.0d);
+            Automobile herbie = new Automobile(4, 13, 2, 4, 1500, "white", 88.0d);
             herbie.Move();
             herbie.Move();
-            Console.WriteLine("Automobile Distance Traveled: " + herbie.DistanceTraveled);
-
+            Console.WriteLine("Automobile " + herbie.GetDistanceTraveled());
 
             Boat boaty = new Boat(2, 500, "Red", 80.0d, .9d);
             boaty.Move();
             boaty.Move();
-            Console.WriteLine("Boat Distance Traveled: " + boaty.DistanceTraveled);
+            Console.WriteLine("Boat Distance " + boaty.GetDistanceTraveled());
+
+            Aircraft Wings = new Aircraft(70, 100000, "Red", 600.0d);
+            Wings.Move();
+            Wings.Move();
+            Console.WriteLine("Aircraft " + Wings.GetDistanceTraveled());
         }
     }
 }

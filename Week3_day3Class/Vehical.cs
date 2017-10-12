@@ -58,6 +58,9 @@ namespace Week3_day3Class
             distanceTraveled += movementSpeed;
         }
 
-
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Traveled: " + distanceTraveled + "\n";
+        }
     }
 }
